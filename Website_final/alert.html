@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+  <title>Traffic Alert System using VANET</title>
+<head><b><u><center><font size="30"> Traffic Alert System using VANET</font></center></u></b>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<form action="db_alert.php"  method="post">
+
+<div class="container">
+<table class="table">
+  <thead>
+  <tr>
+  <th><h2>SELECT ALERT</h2></th>
+  <th><a href="profile.php"><b>Back</b></a></th>
+  <th><a href="Page1.html"><b>Logout</b></a></th>
+  </tr>
+  </thead>
+  </table>
+  <p>Choose any one of the following alerts in order to notify the incident.</p>            
+  <table class="table">
+    <thead>
+      <tr>
+	  <td> Alert : </td>
+	 <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select name="Value">
+  <option value="Low Intensity Traffic">Low Intensity Traffic</li>
+  <option value="High Intensity Traffic">High Intensity Traffic</option>
+  <option value="Medical Emergency">Medical Emergency</option>
+  <option value="Weather Alert">Weather Alert</option>
+  <option value="WIP Alert">WIP Alert</option>
+  <option value="Towing Needed Alert">Towing Needed Alert</option>
+  <option value="Emergency At Night">Emergency At Night</option>
+  <option value="Future Needs Alert">Future Needs Alert</option>
+</select></td></tr>
+    <tr>  <td> Location : </td> <td> <input type="text" style="line-height:1.5em; width:17em; font-size:16px" name="Location" required> </td> </tr>
+        
+	 <tr> <td> Comment : </td> <td>  <input type="text" style="line-height:1.5em; width:17em; font-size:16px" name="Comment" required>  </td>  </tr>
+
+    </tbody>
+  </table>
+     <center><button type="submit" class="btn btn-default">POST</button></center>
+</div>
+<br><br>
+<br>
+<br>
+<br>
+<br><br>
+
+</form>
+</body>
+</html>
